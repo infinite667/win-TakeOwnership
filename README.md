@@ -1,8 +1,6 @@
 # Take Ownership feature on Windows
 A PowerShell script that adds or removes a **"Take Ownership"** entry from the Windows Explorer right-click context menu — letting you quickly take administrative ownership of files, folders, and drives without manually running `takeown` / `icacls` from the command line.
 
-Based on the registry tweak originally published by Shawn Brink on [TenForums.com](https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html), packaged here as a single self-elevating script instead of separate `.reg` files.
-
 ## Features
 
 - Adds "Take Ownership" to the context menu for:
@@ -58,11 +56,6 @@ Run the script with `-Remove` to cleanly delete all registry keys it created. No
 ## Disclaimer
 
 This script modifies the Windows Registry (`HKEY_CLASSES_ROOT`) and grants elevated file/folder permissions. Use at your own risk. Always understand what a script does before running it with administrator rights — review [`Manage-TakeOwnershipMenu.ps1`](./Manage-TakeOwnershipMenu.ps1) before use.
-
-## Credits
-
-- Original registry tweak: [Shawn Brink, TenForums.com](https://www.tenforums.com/tutorials/3841-add-take-ownership-context-menu-windows-10-a.html)
-- PowerShell wrapper: this repository
 
 ## License
 
